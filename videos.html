@@ -5,6 +5,31 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Videos - My Portfolio</title>
   <link rel="stylesheet" href="styles.css" />
+  <style>
+    .video-embed-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 1.5rem;
+      margin-top: 1rem;
+    }
+
+    .video-embed {
+      position: relative;
+      padding-bottom: 56.25%; /* 16:9 aspect ratio */
+      height: 0;
+      overflow: hidden;
+    }
+
+    .video-embed iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: none;
+      border-radius: 8px;
+    }
+  </style>
 </head>
 <body>
   <header>
@@ -18,12 +43,22 @@
     </nav>
   </header>
 
-  <main class="video-gallery">
+  <main>
     <h2>Videography Gallery</h2>
-    <div class="video-grid">
-      <video controls src="videos/video1.mp4"></video>
-      <video controls src="videos/video2.mp4"></video>
-      <!-- Add more as needed -->
+    <div class="video-embed-grid">
+      <!-- Replace with your actual YouTube video IDs -->
+      <div class="video-embed">
+        <iframe src="https://youtu.be/ILsmMQ1Zqb8?si=3xHSdkLGwEvZg_IF" allowfullscreen></iframe>
+      </div>
+      <div class="video-embed">
+        <iframe src="https://youtu.be/DLGZSRjIruw?si=lnSfkzZuyNxm3E7E" allowfullscreen></iframe>
+      </div>
+      <div class="video-embed">
+        <iframe src="https://youtu.be/Nr1n7fL-zlI?si=3j38M2_4M9DyifEk" allowfullscreen></iframe>
+      </div>
+      <div class="video-embed">
+        <iframe src="https://youtu.be/DafUDu_ps50?si=FE1y2H1P-igmnSXg" allowfullscreen></iframe>
+      </div>
     </div>
   </main>
 
