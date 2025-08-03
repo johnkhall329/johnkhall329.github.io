@@ -3,30 +3,60 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>My Portfolio</title>
+  <title>John Hall</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
   <header>
-    <h1>My Portfolio</h1>
     <nav>
       <ul>
         <li><a href="index.html">Home</a></li>
-        <li><a href="photos.html">Photos</a></li>
-        <li><a href="videos.html">Videos</a></li>
+        <li><a href="bio_page.html">About Me </a></li>
+        <li><a href="school.html">Relevant Projects </a></li>
+        <li><a href="work.html">Work Experience</a></li>
       </ul>
     </nav>
   </header>
 
-  <main>
-    <section class="intro">
-      <h2>Welcome!</h2>
-      <p>This is my portfolio of photography and videography work.</p>
-    </section>
-  </main>
+<main>
+  <section class="home-container">
+    <div class="home-panel">
+      <div class="home-text">
+        <h2>About Me</h2>
+        <hr class="home-divider" />
+        <p>
+          My name is John Hall, and I am a graduate student at Worcester Polytechnic Institute studying Robotics Engineering. 
+          I have experience in developing robotic solutions in a variety of work and school environments. 
+        </p>
+        <a href="bio_page.html" class="home-button">Learn More</a>
+      </div>
+      <div class="bio-photo">
+        <img src="images/IMG_3371.jpg" alt="A photo of me" />
+      </div>
+    </div>
+  </section>
+  <section class="home-container">
+    <div class="hone-panel">
+      <div class="home-text">
+        <h2>Work Experience</h2>
+        <hr class="home-divider" />
+        <p>
+          I am currently interning at PAR Systems and conducting research in Prof. Pittiglio's FuTURE Lab at WPI.
+        </p>
+      </div>
+      <div class="home-photo-grid">
+        <img src="images/JoiningPAR_Social.jpg" alt="Description 1"/>
+        <img src="images/logo_square.png" alt="Description 2" />
+      </div>
+      <div class="home-button-container">
+        <a href="work.html" class="home-button">Learn More</a>
+      </div>
+    </div>
+  </section>
+</main> 
 
   <footer>
-    <p>&copy; 2025 My Name</p>
+    <p>&copy; 2025 John Hall</p>
   </footer>
 </body>
 </html>

@@ -1,14 +1,39 @@
 body {
+  background-color: #f8f8f8;
+  color: #28262C;
   font-family: sans-serif;
   margin: 0;
   padding: 0;
-  background: #f8f8f8;
+  font-size: 18px; /* or 1.125rem */
+  line-height: 1.6;
 }
 
-header {
-  background: #333;
-  color: white;
-  padding: 1rem;
+header, footer {
+  background-color: #28262C;
+  color: #f8f8f8;
+  padding: 0.1rem;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 36px;
+  color: #BE5022;
+}
+
+p {
+  font-size: 24px;
+}
+
+a {
+  color: #58A4B0;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #f8f8f8;
 }
 
 nav ul {
@@ -17,13 +42,8 @@ nav ul {
   gap: 1rem;
 }
 
-nav a {
-  color: white;
-  text-decoration: none;
-}
-
 main {
-  padding: 1rem;
+  padding: 0rem 1rem 0rem 1rem;
 }
 
 .photo-grid, .video-grid {
@@ -39,9 +59,108 @@ main {
 }
 
 footer {
-  background: #333;
+  background: #28262C;
   color: white;
   text-align: center;
   padding: 1rem;
   margin-top: 2rem;
 }
+
+footer p{
+  font-size:18px;
+}
+
+.home-container {
+  max-width: 1280px;
+  margin: 2rem auto;
+  padding: 2rem 1rem;
+  background: #58A4B0;
+}
+
+.home-text h2 {
+  font-size: 36px;
+  color: #f8f8f8;
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+}
+
+/* Horizontal orange line */
+.home-divider {
+  border: none;
+  height: 3px;
+  background-color: #BE5022;
+  margin: 0 0 1rem 0rem;
+  width: 250px; /* Adjust length as you like */
+}
+
+.home-panel {
+  display: flex;
+  align-items: center; /* Align text top with image top */
+  gap: 0.5rem;
+}
+
+.home-text {
+  flex: 1;
+  min-width: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 2rem;
+}
+
+.home-button-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 1.5rem; /* add spacing above the button */
+  min-width: 400px;
+}
+
+.home-button {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.5rem 1.2rem;
+  background-color: #BE5022;
+  color: #f8f8f8;
+  text-decoration: none;
+  font-size: 1rem;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+  width: 145px;
+  text-align: center;
+}
+
+.home-button:hover {
+  background-color: #8f3b18;
+}
+
+.bio-photo img {
+  width: 400px;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 2px solid #BE5022;
+  margin-right: 2rem;
+}
+
+.home-photo-grid {
+  display: flex;
+  justify-content: center;     /* centers the images horizontally */
+  gap: 2rem;                   /* small space between images */
+  flex-wrap: wrap;            /* allows wrapping on small screens */
+}
+
+.home-photo-grid img {
+  max-width: 350px;
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+  display: block;
+}
+
+@media (max-width: 600px) {
+  .home-photo-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
