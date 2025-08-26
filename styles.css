@@ -6,9 +6,22 @@ body {
   padding: 0;
   font-size: 18px; /* or 1.125rem */
   line-height: 1.6;
+  overflow: auto;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
 }
 
-header, footer {
+*::-webkit-scrollbar {
+  display: none;               
+}
+
+header {
+  background-color: #28262C;
+  color: #f8f8f8;
+  padding: 1rem;
+}
+
+footer {
   background-color: #28262C;
   color: #f8f8f8;
   padding: 0.1rem;
@@ -32,14 +45,33 @@ a {
   text-decoration: none;
 }
 
-a:hover {
-  color: #f8f8f8;
+nav {
+  display: flex;
+  justify-content: space-between; /* pushes left links to left, contact to right */
+  align-items: center;
+  
 }
 
-nav ul {
+.nav-links{
   list-style: none;
   display: flex;
-  gap: 1rem;
+  gap: 1.5rem;
+  margin: 0;
+  padding: 0;
+  margin-left: 0.5rem;
+}
+
+nav ul li{
+  display: flex;
+}
+
+.nav-links a, .contact{
+  margin-left: auto;
+  margin-right: 0.5rem;
+}
+
+.nav-links a:hover, .contact:hover {
+  color: #f8f8f8;
 }
 
 main {
@@ -89,7 +121,7 @@ footer p{
   border: none;
   height: 3px;
   background-color: #BE5022;
-  margin: 0 0 1rem 0rem;
+  margin: 0 0 0 0;
   width: 250px; /* Adjust length as you like */
 }
 
@@ -150,7 +182,8 @@ footer p{
 }
 
 .home-photo-grid img {
-  max-width: 350px;
+  max-width: 450px;
+  max-height: 350px;
   width: 100%;
   height: auto;
   border-radius: 8px;
@@ -162,5 +195,12 @@ footer p{
   .home-photo-grid {
     grid-template-columns: 1fr;
   }
+}
+
+.large-container {
+  max-height: 1280px;
+  margin: 2rem auto;
+  padding: 2rem 1rem;
+  background: #58A4B0;
 }
 
