@@ -41,7 +41,7 @@ p {
 }
 
 a {
-  color: #58A4B0;
+  color: #66bbc9;
   text-decoration: none;
 }
 
@@ -106,7 +106,8 @@ footer p{
   max-width: 1280px;
   margin: 2rem auto;
   padding: 2rem 1rem;
-  background: #58A4B0;
+  background: #66bbc9;
+  border-radius: 5px;
 }
 
 .home-text h2 {
@@ -114,6 +115,17 @@ footer p{
   color: #f8f8f8;
   margin-top: 0;
   margin-bottom: 0.5rem;
+}
+
+.info-text h2 {
+  font-size: 36px;
+  color: #f8f8f8;
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+}
+
+.info-text p {
+  font-size: 18px;
 }
 
 /* Horizontal orange line */
@@ -131,13 +143,13 @@ footer p{
   gap: 0.5rem;
 }
 
-.home-text {
+.home-text, .info-text {
   flex: 1;
   min-width: 250px;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-left: 2rem;
+  padding: 0rem 1rem;
 }
 
 .home-button-container {
@@ -145,6 +157,7 @@ footer p{
   justify-content: center;
   margin-top: 1.5rem; /* add spacing above the button */
   min-width: 400px;
+  gap: 1rem;
 }
 
 .home-button {
@@ -165,7 +178,17 @@ footer p{
   background-color: #8f3b18;
 }
 
-.bio-photo img {
+.photo-square img {
+  width: 400px;
+  height: 400px;
+  object-fit: cover;
+  object-position: left center;
+  border-radius: 0;
+  border: 2px solid #BE5022;
+  margin: 0rem 2rem;
+}
+
+.photo-circle img {
   width: 400px;
   height: 400px;
   object-fit: cover;
@@ -176,9 +199,9 @@ footer p{
 
 .home-photo-grid {
   display: flex;
-  justify-content: center;     /* centers the images horizontally */
-  gap: 2rem;                   /* small space between images */
-  flex-wrap: wrap;            /* allows wrapping on small screens */
+  justify-content: center;     
+  gap: 2rem;                   
+  flex-wrap: wrap;            
 }
 
 .home-photo-grid img {
@@ -188,6 +211,38 @@ footer p{
   height: auto;
   border-radius: 8px;
   object-fit: cover;
+  object-position: center;
+  display: block;
+}
+
+.bio-photo-grid, .school-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center; /* center the row of images */
+}
+
+.bio-photo-grid img {
+  height: 275px;          /* same height for all images */
+  width: auto;            /* width adjusts based on aspect ratio */
+  object-fit: cover;      /* crop if needed */
+  border-radius: 8px;
+  display: block;
+}
+
+.school-grid img {
+  height: 250px;          /* same height for all images */
+  width: auto;            /* width adjusts based on aspect ratio */
+  object-fit: cover;      /* crop if needed */
+  border-radius: 8px;
+  display: block;
+}
+
+.school-grid iframe {
+  height: 250px;          /* same height for all images */
+  width: 400px;            /* width adjusts based on aspect ratio */
+  object-fit: cover;      /* crop if needed */
+  border-radius: 8px;
   display: block;
 }
 
