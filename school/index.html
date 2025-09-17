@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Relevant Projects - John Hall</title>
+  <link rel="stylesheet" href="../styles.css" />
+</head>
+<body>
+  <header>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="../">Home</a></li>
+        <li><a href="../bio">About Me </a></li>
+        <li><a href="">Relevant Projects</a></li>
+        <li><a href="../work">Work Experience</a></li>
+      </ul>
+      <a href="mailto:jkhall@wpi.edu" class="contact">Contact</a>
+    </nav>    
+  </header>
+
+<main>
+  <section class="home-container">
+    <div class="info-text">
+      <h2>Aquatic Plastic Collection Robot</h2>
+      <hr class="home-divider" />
+      <p>
+        Over the course of my senior year at WPI, I worked with a team of six to design, manufacture, and program 
+        an aquatic robot to identify and collect floating plastic waste along shorelines. At the beginning of the year, I lead the design process to model 
+        the frame of the robot from scratch in SolidWorks. Using the complete model, I helped manufacture and assemble the robot, specifically the water-proofing of 
+        the pontoons. 
+      </p>
+    </div>
+    <div class="school-grid">
+      <img src="../images/Picture1_smaller.png" alt="Description 2" />
+      <iframe src="https://www.youtube.com/embed/DafUDu_ps50?si=rr73htbSDbfqzD31&hd=1" allowfullscreen></iframe>
+      <img src="../images/IMG_3205_small.jpg" alt="Description 2" />
+    </div>
+    <div class="info-text">
+      <p>
+        Once the base robot was complete, I was in charge of robot localization using the onboard IMU and GPS sensors. I created an
+        Extended Kalman Filter that combined acceleration and orientation data from IMU with position data from the GPS to 
+        determine the robot's local pose. We tested our robot in the real world and successfully identified and collected trash.
+        At the end of the year, we wrote and submitted a paper detailing the full year's work. I learned a lot over the course of the year
+        and improved both my techinal and soft skills. This was the largest school project I have had the chance to work on and it took leveraging
+        each teammates knowledge and skills to create the final product.
+      </p>
+    </div>
+  </section>
+  <section class="home-container">
+    <div class="info-text">
+      <h2>Robot Maze Exploration</h2>
+      <hr class="home-divider" />
+      <p>
+        I worked with a small team of three to program a TurtleBot robot to explore and create a map of a maze using SLAM 
+        (Simultaneous Localization and Mapping). The robot was programmed using Python and ROS to use a lidar sensor to navigate
+        the maze and avoid obstacles. I implemented our frontier exploration algorithm, A* path planning, and obstacle avoidance procedures.
+        I was able to learn a lot about path planning and the challenges of SLAM for mobile robots while implementing them on this project.
+      </p>
+    </div>
+    <div class="school-grid">
+      <iframe src="https://www.youtube.com/embed/BaUoiGzZQfI?si=MM3wYkKXZR_kelM9&hd=1"  allowfullscreen></iframe>
+      <iframe src="https://www.youtube.com/embed/Krrdm5FX9RQ?si=-kbD2Gox-URgP65y&hd=1"  allowfullscreen></iframe>
+      <img src="../images/Screenshot 2025-09-16 105243.png" alt="Description 2" />
+    </div>
+  </section>
+  <section class="home-container">
+    <div class="info-text">
+      <h2>Serial Manipulator Control</h2>
+      <hr class="home-divider" />
+      <p>
+        Over the course of my time at WPI as an undergraduate and graduate student, I have had the opportunity to employ various robotic concepts on 
+        the four degree of freedom arms seen in the videos below. The videos are demonstrations of the first project I worked on sorting colored objects together
+        with a team of three. This course introduced us to forward and inverse kinematics along with trajectory control. We used DH parameters for FK, geometric
+        analysis for IK, and quintic polynomial trajectory control. 
+      </p>
+    </div>
+    <div class="school-grid">
+      <iframe src="https://www.youtube.com/embed/R9NuuroqJuc?si=1ruP2jkjoIhG3EE3&hd=1"  allowfullscreen></iframe>
+      <iframe src="https://www.youtube.com/embed/Mlj6C2pCwlU?si=VxhOwwkSowcyvtLL&hd=1"  allowfullscreen></iframe>
+    </div>
+    <div class="info-text">
+      <p>
+        Other more applications for these arms have included more advanced robot dynamics and control methods. I worked with a different team of three where we implemented
+        Product of Exponentials FK, Newton-Raphson IK, and LSPB trajectory control. In addition, we utilized the Newton-Euler method for the inverse-dynamics of the robot
+        to measure the forces experienced at the tool-tip.
+      </p>
+      <p>
+        The most recent use of the serial manipulators was using current-based torque control to position the arm. I was able to move the arm to various positions
+        using control methods such as gravity compensation, robust computed torque, and adaptive control.
+      </p>
+    </div>
+  </section>
+  <section class="home-container">
+    <div class="info-text">
+      <h2>Romi Robots</h2>
+      <hr class="home-divider" />
+      <p>
+        Some of the first robotics projects I worked on at WPI were with small Romi robots. I worked with a team of three to design and build a four-bar mechanism
+        with two different grippers to pick up and place metal pannels. This robot had an ultrasonic and line sensor to navigate a field and place the pannels.
+        Through this project, I was able to expand my SolidWorks skills and taught me important considerations for mechanical design in robotics.
+      </p>
+    </div>
+    <div class="school-grid">
+      <img src="../images/PXL_20221008_174658424_cropped.jpg" alt="Description 2" />
+      <iframe src="https://www.youtube.com/embed/UkbR8ozrZK8?si=cjRoU0nQZyDJfjd2&hd=1"  allowfullscreen></iframe>
+    </div>
+        <div class="info-text">
+      <p>
+        Another project I completed with these Romi robots was a mutli-robot escape room. Each member of the team had a robot with different sensors (camera, IR sensor, IR emitter)
+        and the robots had to work together to share information to escape. The robots were programmed in C++ and communicated through an MQTT server. This project taught
+        me a lot about sensor integration and introduced me to the challenges of multi-robot control.
+      </p>
+    </div>
+  </section>
+</main>
+
+  <footer>
+    <p>&copy; 2025 John Hall</p>
+  </footer>
+</body>
+</html>
